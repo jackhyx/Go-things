@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7fcfee9f-254d-43dd-a903-e1d4ecf7ac4d" name="变更" comment="go 学习笔记">
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v1/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v2/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v2/server_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v3/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v3/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v3/server_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v4/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v4/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v4/server_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v5/in_memory_player_store.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v5/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v5/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v5/server_integration_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v5/server_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test-Driven Development for learnig/appprogram/http_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v1/server_test.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://E:/GO" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28tJE52gYiAorLX4W0GBkUBSpyX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "C:/Users/lenovo/Desktop/Go-things/Test-Driven Development for learnig"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\Desktop\Go-things\Test-Driven Development for learnig" />
+      <recent name="C:\Users\lenovo\Desktop\Go-things" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go 构建.go build v1/">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build http-server/" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$/Test-Driven Development for learnig/http-server" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build server.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v1/server.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build v1/" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v1" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test v1" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v1" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v1" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="server_test.go 中的 TestGETPlayers/returns_Pepper's_score" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v1" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Test-Driven Development for learnig/http-server/v1/server_test.go" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGETPlayers\E$/^\Qreturns_Pepper's_score\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go 构建.go build v1/" />
+        <item itemvalue="Go 构建.go build server.go" />
+        <item itemvalue="Go 测试.go test v1" />
+        <item itemvalue="Go 构建.go build http-server/" />
+        <item itemvalue="Go 测试.server_test.go 中的 TestGETPlayers/returns_Pepper's_score" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="go 学习笔记" />
+    <option name="LAST_COMMIT_MESSAGE" value="go 学习笔记" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
