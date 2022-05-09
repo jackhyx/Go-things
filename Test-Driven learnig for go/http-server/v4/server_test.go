@@ -9,7 +9,7 @@ import (
 
 type StubPlayerStore struct {
 	scores   map[string]int
-	winCalls []string
+	winCalls []string // 获胜记录
 }
 
 func (s *StubPlayerStore) GetPlayerScore(name string) int {
@@ -17,11 +17,14 @@ func (s *StubPlayerStore) GetPlayerScore(name string) int {
 	return score
 }
 
+// 接下来要检查当我们执行 POST /players/{name} 时 PlayerStore 被告知要做一次获胜记录。
+// 我们可以通过使用新的 RecordWin 方法扩展 StubPlayerStore 然后监视它的调用来实现这一点。
 func (s *StubPlayerStore) RecordWin(name string) {
 	s.winCalls = append(s.winCalls, name)
 }
 
 func TestGETPlayers(t *testing.T) {
+
 	store := StubPlayerStore{
 		map[string]int{
 			"Pepper": 20,
@@ -72,11 +75,12 @@ func TestGETPlayers(t *testing.T) {
 func TestStoreWins(t *testing.T) {
 	store := StubPlayerStore{
 		map[string]int{},
-		nil,
+		nil, // 我们需要更新创建 StubPlayerStore 的代码，因为我们添加了一个新字段
 	}
 	server := &PlayerServer{&store}
 
 	t.Run("it records wins on POST", func(t *testing.T) {
+
 		player := "Pepper"
 
 		request, _ := http.NewRequest(http.MethodPost, fmt.Sprintf("/players/%s", player), nil)

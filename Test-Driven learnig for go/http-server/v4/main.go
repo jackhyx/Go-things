@@ -9,7 +9,7 @@ import (
 type InMemoryPlayerStore struct{}
 
 // RecordWin will record a player's win.
-func (i *InMemoryPlayerStore) RecordWin(name string) {
+func (i *InMemoryPlayerStore) RecordWin(name string) { // 我们给 InMemoryPlayerStore 加上那个方法。
 }
 
 // GetPlayerScore retrieves scores for a given player.

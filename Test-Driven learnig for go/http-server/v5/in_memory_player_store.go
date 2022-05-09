@@ -2,6 +2,12 @@ package main
 
 import "sync"
 
+/*
+我们需要存储数据，所以我在 InMemoryPlayerStore 结构中添加了 map[string]int
+为方便起见，我已经让 NewInMemoryPlayerStore 初始化了 store，并更新了集成测试来使用它（store := NewInMemoryPlayerStore()）
+代码的其余部分只是 map 相关的操作
+*/
+
 // NewInMemoryPlayerStore initialises an empty player store.
 func NewInMemoryPlayerStore() *InMemoryPlayerStore {
 	return &InMemoryPlayerStore{

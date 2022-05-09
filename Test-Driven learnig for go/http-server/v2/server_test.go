@@ -63,6 +63,7 @@ func TestGETPlayers(t *testing.T) {
 	}
 }
 
+// 现在我们在测试中检查所有返回状态了，所以我创建了一个叫 assertStatus 的辅助函数来提高编码效率。
 func assertStatus(t testing.TB, got, want int) {
 	t.Helper()
 	if got != want {
