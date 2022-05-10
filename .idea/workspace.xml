@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fcfee9f-254d-43dd-a903-e1d4ecf7ac4d" name="变更" comment="go 学习笔记">
-      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/di/di.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/di/di_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/mocking/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/mocking/mock_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,57 +63,60 @@
       <recent name="C:\Users\lenovo\Desktop\Go-things" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 测试.di_test.go 中的 TestGreet">
-    <configuration name="go build di.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go 测试.go test mocking">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/di/di.go" />
+      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/mocking/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build maps/" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go test mocking" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/mocking" />
       <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$/Test-Driven learnig for go/maps" />
-      <method v="2" />
-    </configuration>
-    <configuration name="di_test.go 中的 TestGreet" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/di" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/di/di_test.go" />
-      <framework value="gotest" />
-      <pattern value="^\QTestGreet\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="di_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/di" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/di/di_test.go" />
-      <framework value="gotest" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go test maps" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/maps" />
-      <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$/Test-Driven learnig for go/maps" />
+      <directory value="$PROJECT_DIR$/Test-Driven learnig for go/mocking" />
       <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mock_test.go 中的 TestCountdown" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/mocking" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/mocking/mock_test.go" />
+      <framework value="gotest" />
+      <pattern value="^\QTestCountdown\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mock_test.go 中的 TestCountdown/prints_3_to_Go!" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/mocking" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/mocking/mock_test.go" />
+      <framework value="gotest" />
+      <pattern value="^\QTestCountdown\E$/^\Qprints_3_to_Go!\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mock_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/mocking" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/mocking/mock_test.go" />
       <framework value="gotest" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go 测试.di_test.go 中的 TestGreet" />
-        <item itemvalue="Go 构建.go build di.go" />
-        <item itemvalue="Go 测试.di_test.go" />
-        <item itemvalue="Go 测试.go test maps" />
-        <item itemvalue="Go 构建.go build maps/" />
+        <item itemvalue="Go 测试.go test mocking" />
+        <item itemvalue="Go 测试.mock_test.go 中的 TestCountdown/prints_3_to_Go!" />
+        <item itemvalue="Go 测试.mock_test.go 中的 TestCountdown" />
+        <item itemvalue="Go 构建.go build main.go" />
+        <item itemvalue="Go 测试.mock_test.go" />
       </list>
     </recent_temporary>
   </component>
