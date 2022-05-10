@@ -10,13 +10,14 @@ func TestAdder(t *testing.T) {
 	expected := 4
 
 	if sum != expected {
-		t.Errorf("expected '%d' but got '%d'", expected, sum)
+		t.Errorf("expected '%d' but got '%d'", expected, sum) // %d 整数 %s 字符串
 	}
 
 }
 
 func Add(x, y int) int {
 	return x + y
+
 }
 
 func ExampleAdd() {
@@ -24,6 +25,8 @@ func ExampleAdd() {
 	fmt.Println(sum)
 	// Output: 6
 }
+
+// 我们在学习了# 命名返回值 #但没有在这里使用。它通常应该在结果的含义在上下文中不明确时使用，在我们的例子中，Add 函数将参数相加是非常明显的。
 
 /*
 请注意，如果删除注释 「//Output: 6」，示例函数将不会执行。虽然函数会被编译，但是它不会执行。
