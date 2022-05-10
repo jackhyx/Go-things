@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fcfee9f-254d-43dd-a903-e1d4ecf7ac4d" name="变更" comment="go 学习笔记">
-      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/maps/dictionary.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/maps/dictionary_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/maps/summary.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/pointers/summary.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/pointers/wallet_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/structs/summary.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/di/di.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/di/di_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test-Driven learnig for go/STRUCT/struct_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Test-Driven learnig for go/structs/struct_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +63,15 @@
       <recent name="C:\Users\lenovo\Desktop\Go-things" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 测试.go test maps">
+  <component name="RunManager" selected="Go 测试.di_test.go 中的 TestGreet">
+    <configuration name="go build di.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/di/di.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build maps/" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
       <working_directory value="$PROJECT_DIR$" />
@@ -76,32 +79,22 @@
       <directory value="$PROJECT_DIR$/Test-Driven learnig for go/maps" />
       <method v="2" />
     </configuration>
-    <configuration name="dictionary_test.go 中的 TestSearch" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="di_test.go 中的 TestGreet" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/maps" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/di" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/maps/dictionary_test.go" />
+      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/di/di_test.go" />
       <framework value="gotest" />
-      <pattern value="^\QTestSearch\E$" />
+      <pattern value="^\QTestGreet\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="dictionary_test.go 中的 TestSearch/unknown_word" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="di_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/maps" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/di" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/maps/dictionary_test.go" />
-      <framework value="gotest" />
-      <pattern value="^\QTestSearch\E$/^\Qunknown_word\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="dictionary_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/maps" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/maps/dictionary_test.go" />
+      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/di/di_test.go" />
       <framework value="gotest" />
       <method v="2" />
     </configuration>
@@ -116,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 测试.di_test.go 中的 TestGreet" />
+        <item itemvalue="Go 构建.go build di.go" />
+        <item itemvalue="Go 测试.di_test.go" />
         <item itemvalue="Go 测试.go test maps" />
         <item itemvalue="Go 构建.go build maps/" />
-        <item itemvalue="Go 测试.dictionary_test.go 中的 TestSearch/unknown_word" />
-        <item itemvalue="Go 测试.dictionary_test.go" />
-        <item itemvalue="Go 测试.dictionary_test.go 中的 TestSearch" />
       </list>
     </recent_temporary>
   </component>
