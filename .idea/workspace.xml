@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fcfee9f-254d-43dd-a903-e1d4ecf7ac4d" name="变更" comment="go 学习笔记">
-      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/arrays/summary.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/hello/summary.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/maps/dictionary.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/maps/dictionary_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/maps/summary.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/pointers/summary.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/pointers/wallet_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/structs/summary.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test-Driven learnig for go/ADD/adder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Test-Driven learnig for go/integers/adder_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test-Driven learnig for go/FOR/repeat_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Test-Driven learnig for go/for/repeat_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test-Driven learnig for go/HELLO/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/Test-Driven learnig for go/hello/hello.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test-Driven learnig for go/HELLO/hello_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Test-Driven learnig for go/hello/hello_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test-Driven learnig for go/SumTest/sum_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Test-Driven learnig for go/arrays/sum_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test-Driven learnig for go/STRUCT/struct_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Test-Driven learnig for go/structs/struct_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28tJE52gYiAorLX4W0GBkUBSpyX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,63 +68,59 @@
       <recent name="C:\Users\lenovo\Desktop\Go-things" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 测试.sum_test.go 中的 TestSumAllTails">
-    <configuration name="repeat_test.go 中的 BenchmarkRepeat" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go 测试.go test maps">
+    <configuration name="go build maps/" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/for" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/for/repeat_test.go" />
-      <framework value="gobench" />
-      <pattern value="^\QBenchmarkRepeat\E$" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$/Test-Driven learnig for go/maps" />
       <method v="2" />
     </configuration>
-    <configuration name="sum_test.go 中的 TestSumAll" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="dictionary_test.go 中的 TestSearch" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/arrays" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/maps" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/arrays/sum_test.go" />
+      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/maps/dictionary_test.go" />
       <framework value="gotest" />
-      <pattern value="^\QTestSumAll\E$" />
+      <pattern value="^\QTestSearch\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="sum_test.go 中的 TestSumAllTails" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="dictionary_test.go 中的 TestSearch/unknown_word" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/arrays" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/maps" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/arrays/sum_test.go" />
+      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/maps/dictionary_test.go" />
       <framework value="gotest" />
-      <pattern value="^\QTestSumAllTails\E$" />
+      <pattern value="^\QTestSearch\E$/^\Qunknown_word\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="sum_test.go 中的 TestSum/colletion_of_any_size" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="dictionary_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/arrays" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/maps" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/arrays/sum_test.go" />
+      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/maps/dictionary_test.go" />
       <framework value="gotest" />
-      <pattern value="^\QTestSum\E$/^\Qcolletion_of_any_size\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="sum_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go test maps" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/arrays" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/arrays/sum_test.go" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/maps" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$/Test-Driven learnig for go/maps" />
+      <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go 测试.sum_test.go 中的 TestSumAllTails" />
-        <item itemvalue="Go 测试.sum_test.go 中的 TestSumAll" />
-        <item itemvalue="Go 测试.sum_test.go 中的 TestSum/colletion_of_any_size" />
-        <item itemvalue="Go 测试.sum_test.go" />
-        <item itemvalue="Go 测试.repeat_test.go 中的 BenchmarkRepeat" />
+        <item itemvalue="Go 测试.go test maps" />
+        <item itemvalue="Go 构建.go build maps/" />
+        <item itemvalue="Go 测试.dictionary_test.go 中的 TestSearch/unknown_word" />
+        <item itemvalue="Go 测试.dictionary_test.go" />
+        <item itemvalue="Go 测试.dictionary_test.go 中的 TestSearch" />
       </list>
     </recent_temporary>
   </component>
