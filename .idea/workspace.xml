@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fcfee9f-254d-43dd-a903-e1d4ecf7ac4d" name="变更" comment="go 学习笔记">
-      <change afterPath="$PROJECT_DIR$/go-use/基本类型.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ttt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/concurrency/concurrency_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/concurrency/summary.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test-Driven learnig for go/select/select_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution/consisitent hash achive by go.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution/hashring.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution/theory.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-use/变量.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tttt.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-use/go基本特性.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-use/go基本特性.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,39 +46,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "D:/Users/sangfor/Desktop/jackhyx/Go-things/Test-Driven learnig for go",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/sangfor/Desktop/jackhyx/Go-things/Test-Driven learnig for go&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\Test-Driven learnig for go" />
       <recent name="C:\Users\lenovo\Desktop\Go-things\Test-Driven Development for learnig" />
       <recent name="C:\Users\lenovo\Desktop\Go-things" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\distribution" />
+    </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build ttt.go">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/mocking/main.go" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go 构建.go build tttt.go">
     <configuration name="go build ttt.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
       <working_directory value="$PROJECT_DIR$" />
@@ -81,42 +82,50 @@
       <filePath value="$PROJECT_DIR$/ttt.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go test mocking" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go build tttt.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/mocking" />
-      <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$/Test-Driven learnig for go/mocking" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <method v="2" />
-    </configuration>
-    <configuration name="mock_test.go 中的 TestCountdown" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/mocking" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/mocking/mock_test.go" />
-      <framework value="gotest" />
-      <pattern value="^\QTestCountdown\E$" />
+      <filePath value="$PROJECT_DIR$/tttt.go" />
       <method v="2" />
     </configuration>
-    <configuration name="mock_test.go 中的 TestCountdown/prints_3_to_Go!" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="select_test.go 中的 TestRacer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/mocking" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/select" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/mocking/mock_test.go" />
+      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/select/select_test.go" />
       <framework value="gotest" />
-      <pattern value="^\QTestCountdown\E$/^\Qprints_3_to_Go!\E$" />
+      <pattern value="^\QTestRacer\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="select_test.go 中的 TestRacer/returns_an_error_if_a_server_doesn't_respond_within_10s" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/select" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/select/select_test.go" />
+      <framework value="gotest" />
+      <pattern value="^\QTestRacer\E$/^\Qreturns_an_error_if_a_server_doesn't_respond_within_10s\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="select_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$/Test-Driven learnig for go/select" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Test-Driven learnig for go/select/select_test.go" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build tttt.go" />
         <item itemvalue="Go 构建.go build ttt.go" />
-        <item itemvalue="Go 测试.go test mocking" />
-        <item itemvalue="Go 测试.mock_test.go 中的 TestCountdown/prints_3_to_Go!" />
-        <item itemvalue="Go 测试.mock_test.go 中的 TestCountdown" />
-        <item itemvalue="Go 构建.go build main.go" />
+        <item itemvalue="Go 测试.select_test.go 中的 TestRacer" />
+        <item itemvalue="Go 测试.select_test.go" />
+        <item itemvalue="Go 测试.select_test.go 中的 TestRacer/returns_an_error_if_a_server_doesn't_respond_within_10s" />
       </list>
     </recent_temporary>
   </component>
@@ -142,6 +151,17 @@
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tttt.go</url>
+          <line>4</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Go_things$sum_test_go__TestSum_colletion_of_any_size.out" NAME="sum_test.go 中的 TestSum/colletion_of_any_size 覆盖结果" MODIFIED="1652151138968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
