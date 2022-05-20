@@ -1,25 +1,22 @@
-package go_use
+* Go语言中type关键字用于定义类型，因此又称为类型别名。
 
-import "fmt"
+* Go语言中的type并不对应着C/C++语言中的typedef关键字。
 
-Go语言中type关键字用于定义类型，因此又称为类型别名。
+* 理解了type关键字就会很容易理解Go语言中的函数、结构体、接口等。
 
-Go语言中的type并不对应着C/C++语言中的typedef关键字。
-
-理解了type关键字就会很容易理解Go语言中的函数、结构体、接口等。
-
-类型定义
-使用type关键字定义类型
+### 类型定义
+#### 使用type关键字定义类型
 
 type NewType BaseType
-类型定义是基于底层类型（BaseType）创建全新的类型（NewType），类型定义创建的是一个全新的类型，与其所基于的类型是两个不同的类型。
 
-新类型不会继承底层类型的方法，但会继承底层类型的元素。比如底层类型是interface则其方法会被保留。
+* 类型定义是基于底层类型（BaseType）创建全新的类型（NewType），类型定义创建的是一个全新的类型，与其所基于的类型是两个不同的类型。
 
-每个type都拥有其底层类型
+* 新类型不会继承底层类型的方法，但会继承底层类型的元素。比如底层类型是interface则其方法会被保留。
 
-由于Go语言是强类型静态语言，使用type创建出的新类型虽然与旧类型存储范围相同，但二者并不能相互赋值，只能类型转换。
+* 每个type都拥有其底层类型
 
+* 由于Go语言是强类型静态语言，使用type创建出的新类型虽然与旧类型存储范围相同，但二者并不能相互赋值，只能类型转换。
+```
 package main
 
 import "fmt"
@@ -79,4 +76,4 @@ func (d Duration) test(str string){
 cannot define new methods on non-local type time.Duration
 
 // time.Duration并非在当前main包中定义，而是在time包中定义的，与main包并非同一个包，因此不能为非相同包内的类型定义方法。
-
+```

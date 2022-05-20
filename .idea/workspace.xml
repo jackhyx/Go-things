@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fcfee9f-254d-43dd-a903-e1d4ecf7ac4d" name="变更" comment="go 学习笔记">
-      <change afterPath="$PROJECT_DIR$/go-use/errorgroup用法.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go-use/waitgroup源码.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go-use/无缓冲channel.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yyy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zzz.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-use/ m0、g0 的概念.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-use/go-range易踩坑.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-use/go常见编码错误.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-use/unsafe.Pointer使用.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-use/切片slice的一些问题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-use/变量标准声明&amp;短声明.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-use/枚举.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-use/空结构体使用场景.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-use/结构体和结构体指针的区别.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-use/逃逸分析.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zzz_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tttt.go" beforeDir="false" afterPath="$PROJECT_DIR$/tttt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-use/go type.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-use/type关键字.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-use/基本类型.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-use/基本类型.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tttt.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,27 +52,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultApiTemplateProperty": "Api Template",
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "configurable..is.expanded": "false",
-    "configurable.GoLibrariesConfigurable.is.expanded": "true",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "D:/Users/sangfor/Desktop/jackhyx/Go-things/Test-Driven learnig for go",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.customizations"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultApiTemplateProperty&quot;: &quot;Api Template&quot;,
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;configurable..is.expanded&quot;: &quot;false&quot;,
+    &quot;configurable.GoLibrariesConfigurable.is.expanded&quot;: &quot;true&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/sangfor/Desktop/jackhyx/Go-things/Test-Driven learnig for go&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\Test-Driven learnig for go" />
@@ -76,37 +83,13 @@
       <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\distribution" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build zzz.go">
+  <component name="RunManager" selected="Go 测试.Go-things 中的 BenchmarkClassicForLoopIntArray">
     <configuration name="go build errorgroup用法.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/go-use/errorgroup用法.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build ttt.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/ttt.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build tttt.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/tttt.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build yyy.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Go-things" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/yyy.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build zzz.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -118,13 +101,45 @@
       <filePath value="$PROJECT_DIR$/zzz.go" />
       <method v="2" />
     </configuration>
+    <configuration name="Go-things 中的 BenchmarkClassicForLoopIntArray" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="Go-things" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gobench" />
+      <pattern value="^\QBenchmarkClassicForLoopIntArray\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Go-things 中的 BenchmarkForRangeIntArray" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="Go-things" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gobench" />
+      <pattern value="^\QBenchmarkForRangeIntArray\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gobench zzz_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-things" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="Go-things" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/zzz_test.go" />
+      <framework value="gobench" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 测试.Go-things 中的 BenchmarkClassicForLoopIntArray" />
+        <item itemvalue="Go 测试.Go-things 中的 BenchmarkForRangeIntArray" />
+        <item itemvalue="Go 测试.gobench zzz_test.go" />
         <item itemvalue="Go 构建.go build zzz.go" />
         <item itemvalue="Go 构建.go build errorgroup用法.go" />
-        <item itemvalue="Go 构建.go build yyy.go" />
-        <item itemvalue="Go 构建.go build tttt.go" />
-        <item itemvalue="Go 构建.go build ttt.go" />
       </list>
     </recent_temporary>
   </component>
