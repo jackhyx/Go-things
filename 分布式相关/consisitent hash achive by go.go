@@ -1,4 +1,4 @@
-package distribution
+package 分布式相关
 
 import (
 	"fmt"
