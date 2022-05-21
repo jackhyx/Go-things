@@ -1,23 +1,8 @@
-package go_use
-
-import "fmt"
-
-/* 函数式选项
-go的函数式选项模式[Functional Options Pattern in Go]
-前言：
-go语言开发遇到的许多问题之一是尝试将一个函数的参数设置为可选. 这是一个非常常见的用例, 类似python等语言中的函数默认参数，有些对象应该使用一些基本的默认设置来开箱即用, 你偶尔可能需要提供一些更详细的配置.
-
-那么你如何创建一个函数, 用户可以指定一些额外的配置?
-
-解决方法：函数式选项模式
-go-zero
-官方文档
-
-https://go-zero.dev/cn/
-
-https://grpc.io/
-
-https://grpc.io/docs/languages/go/
+### 函数式选项
+* go的函数式选项模式[Functional Options Pattern in Go]
+* 前言： go语言开发遇到的许多问题之一是尝试将一个函数的参数设置为可选. 这是一个非常常见的用例, 类似python等语言中的函数默认参数，有些对象应该使用一些基本的默认设置来开箱即用, 你偶尔可能需要提供一些更详细的配置.
+#### 实例一
+```
  */
 package main
 // 函数式选项模式（灵活使用默认值，又不影响对元素的修改）
@@ -68,14 +53,14 @@ o>>: &{a b 1}
 o1:>> &{A B 100}
 o1:>> &{AA BB 100
 
+```
+* 总结： 函数式选项模式的本质是利用go对闭包的支持，实现了函数默认值，并且以后再要为Option添加新的字段也不会影响之前的代码
 
-// 总结： 函数式选项模式的本质是利用go对闭包的支持，实现了函数默认值，并且以后再要为Option添加新的字段也不会影响之前的代码
-
-
-// 函数式选项（Functional Options）: Golang中实现简洁API的一种方式
-// 在使用NewXXX函数构建struct的时候，struct中的属性并不都是必须的，这些非必须属性，在构建struct的过程中可以通过函数式选项的方式，实现更加简洁的API
-// 假设需要实现一个协程池GPool，其中必备的属性有协程数量size，还有可选项：是否异步async，错误处理errorHandler，最大缓存任务数maxTaskNums，那么struct的设计应该如下
-
+#### 实例二
+* 函数式选项（Functional Options）: Golang中实现简洁API的一种方式
+* 在使用NewXXX函数构建struct的时候，struct中的属性并不都是必须的，这些非必须属性，在构建struct的过程中可以通过函数式选项的方式，实现更加简洁的API
+* 假设需要实现一个协程池GPool，其中必备的属性有协程数量size，还有可选项：是否异步async，错误处理errorHandler，最大缓存任务数maxTaskNums，那么struct的设计应该如下
+```
 package pool
 
 // Option 定义函数式选项
@@ -159,8 +144,9 @@ maxTasks: maxTasks,
 }
 
 // 当struct中的属性变得越来越多时候，这长长的函数签名，对于调用者而言，简直是噩梦般的存在
-
-// 第二种，使用建造者模式
+```
+* 第二种，使用建造者模式
+```
 func (builder *GPoolBuilder) Builder(size int64) *GPoolBuilder {
 return &GPoolBuilder{p: &GPool{
 size: size,
@@ -180,14 +166,15 @@ return builder.p
 // 调用者使用经构建者模式封装后的API，还是非常舒服的
 builder := GPoolBuilder{}
 p := builder.Builder(100).WithAsync(true).Build()
+```
 
-// 但是，却要额外维护一份属于builder的代码，虽然使用简洁，但是具备一定的维护成本！！
-// 总的来看，函数式选项还是最佳的选择方案，开发者通过它能够构建简洁，友好的AP
+* 但是，却要额外维护一份属于builder的代码，虽然使用简洁，但是具备一定的维护成本！！
+* 总的来看，函数式选项还是最佳的选择方案，开发者通过它能够构建简洁，友好的AP
 
 
-// option 模式
+#### 实例三
 前置条件：我们从一个比较常见的问题入手，当我们有一个结构体，我们想到得到一个该结构体的变量，一个常见的方式就是通过工厂模式创建一个new函数，然后传入相应的参数。那么就有了下面的代码：
-
+```
 type Diss struct {
 	Topic string
 	Person string
@@ -203,20 +190,25 @@ func traditionalNew(topic, person string, time int) Diss {
 		Time:   time,
 	}
 }
-假设我们不想传入时间参数，这个时候该怎么去解决呢？一种方式是直接通过构造结构体来实现：
+```
+* 假设我们不想传入时间参数，这个时候该怎么去解决呢？一种方式是直接通过构造结构体来实现：
 
-diss := Diss{"some topic", "someone"}
+```diss := Diss{"some topic", "someone"}
+
+
 这里我们并不传入Time字段的值，直接使用他的默认值
 但是如果我们使用上面的传统方式的new的时候就无法成功满足这个要求，我们只能通过新建另一个传统的new2来实现。这样就会比较麻烦。
+```
+* 这里我们就引入option编程模式：具体来说要知道golang提供的基本的编程方式：可变参数，函数式编程。
 
-这里我们就引入option编程模式：具体来说要知道golang提供的基本的编程方式：可变参数，函数式编程。
-
-// 可变参数示例
+* 可变参数示例
+```
 func variedFunc(arg ...int){
-	//这里的arg就是可变参数，我们可以对他进行遍历
+    //这里的arg就是可变参数，我们可以对他进行遍历
 }
-函数式编程：
-
+```
+* 函数式编程：
+```
 type func01 func(int)
 
 func funcationalFunc() func01 {
@@ -224,11 +216,13 @@ func funcationalFunc() func01 {
 
 	}
 }
-有了这些基础，我们来构想一个模型出来
-
+```
+* 有了这些基础，我们来构想一个模型出来
+```
 type Option func(d *Diss)
 
 // 我们现在只需要传入Option变量就可以了，所以我们需要构造函数
+
 func optionNew(option ...Option) *Diss{
 	diss := &Diss{}
 	for _, o := range option {
@@ -261,6 +255,6 @@ func main() {
 	dissRaw := traditionalNew("something bad too","jackal",3)
 	fmt.Println(dissRaw)
 }
-这里可以把option看成对diss对象的装饰器。然后我们通过函数返回的方式生成这些装饰器，当然你也可以使用其他方式实现类似的装饰器的效果。这里还有一个优势就是，我们传参的时候可以无序地传进去，而在传统的构造函数里面只能通过参数指定的方式传参。
-
-关于option的用法在很多源码库里面都是用到了，学习它对于读源码能力有很大的提高，对写代码能力也有不小的促进。
+```
+* 这里可以把option看成对diss对象的装饰器。然后我们通过函数返回的方式生成这些装饰器，当然你也可以使用其他方式实现类似的装饰器的效果。这里还有一个优势就是，我们传参的时候可以无序地传进去，而在传统的构造函数里面只能通过参数指定的方式传参。
+* 关于option的用法在很多源码库里面都是用到了，学习它对于读源码能力有很大的提高，对写代码能力也有不小的促进。
