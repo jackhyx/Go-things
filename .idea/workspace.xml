@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fcfee9f-254d-43dd-a903-e1d4ecf7ac4d" name="变更" comment="go 学习笔记">
-      <change afterPath="$PROJECT_DIR$/go-use/值方法和指针方法.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gooo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-use/go基本特性.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-use/go基本特性.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tttt.go" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/go用法/defer的使用.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go用法/nil的比较.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go用法/多值赋值.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go用法/系统存储方式：大端？小端？.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go用法/零值特性.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +72,7 @@
       <recent name="C:\Users\lenovo\Desktop\Go-things" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\go源码" />
       <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\distribution" />
     </key>
   </component>
