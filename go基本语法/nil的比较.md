@@ -6,8 +6,9 @@
 // nil is a predeclared identifier representing the zero value for a
 // pointer, channel, func, interface, map, or slice type.
 var nil Type // Type must be a pointer, channel, func, interface, map, or slice type
-nil是一个预先声明的标识符，代表指针(pointer)、通道(channel)、函数(func)、接口(interface)、map、切片(slice)。也可以这么理解：指针、通道、函数、接口、map、切片的零值就是nil，就像布尔类型的零值是false、整型的零值是0。
 ```
+#### nil是一个预先声明的标识符，代表指针(pointer)、通道(channel)、函数(func)、接口(interface)、map、切片(slice)。
+也可以这么理解：指针、通道、函数、接口、map、切片的零值就是nil，就像布尔类型的零值是false、整型的零值是0。
 * 深入理解nil
 ```
 nil根本不是关键字
@@ -35,6 +36,7 @@ fmt.Println(slice)
 
 * nil的默认类型
 * 一般预声明标识符都会有一个默认类型，比如Go语言中的itoa默认类型就是int，那么nil的默认类型呢？我们写个例子来看一下：
+* %T 打印类型
 
 ```
 func main()  {
@@ -56,7 +58,7 @@ fmt.Printf("%T\n",val2)
 * nil标识符的比较
 
 * nil的值比较
-```
+
 我们先来看一下nil标识符的比较，也就是我们开头那一道面试题，先看一下运行结果呢：
 
 # command-line-arguments
@@ -64,8 +66,8 @@ fmt.Printf("%T\n",val2)
 
 接着我们来看一看nil的值比较，因为nil是没有类型的，是在编译期根据上下文确定的，所以要比较nil的值也就是比较不同类型的nil，这又分为同一个类型的nil值比较和不同类型nil值的比较，分这两种情况我们分别来验证一下。
 
-同一个类型的nil值比较
-
+#### 同一个类型的nil值比较
+```
 func main()  {
 // 指针类型的nil比较
 fmt.Println((*int64)(nil) == (*int64)(nil))
@@ -135,12 +137,13 @@ fmt.Println(ma == slice)
 ./nil.go:27:18: too many errors
 
 ```
-从运行结果我们可以得出，只有指针类型和channel类型与接口类型可以比较，其他类型的之间是不可以相互比较的。为什么指针类型、channel类型可以和接口类型进行比较呢？
+#### 只有指针类型和channel类型与接口类型可以比较，其他类型的之间是不可以相互比较的。
+为什么指针类型、channel类型可以和接口类型进行比较呢？
 
 这个答案，先空着，因为我也没有想明白，不是说/任何类型都实现了interface{}类型吗？这里没想明白，期待你们的解答。
 
 nil在不同类型中使用需要注意的问题
-interface与nil比较要注意的一个点
+#### interface与nil比较要注意的一个点
 我们先来看一个例子：
 ```
 func main()  {
@@ -165,7 +168,8 @@ return res
 false
 ```
 
-输出结果是false，在Todo方法内我们声明了一个变量res，这个变量是一个指针类型，零值是nil，返回的是接口类型，按理说返回值接口类型也应是nil才对，但是结果却不是这样。这是因为我们忽略了接口类型的一个概念，interface 不是单纯的值，而是分为类型和值。所以必须要类型和值同时都为 nil 的情况下，interface 的 nil 判断才会为 true。
+输出结果是false，在Todo方法内我们声明了一个变量res，这个变量是一个指针类型，零值是nil，返回的是接口类型，按理说返回值接口类型也应是nil才对，但是结果却不是这样。
+#### 这是因为我们忽略了接口类型的一个概念，interface 不是单纯的值，而是分为类型和值。所以必须要类型和值同时都为 nil 的情况下，interface 的 nil 判断才会为 true。
 
 这是一个新手很容易出现的问题，大家一定要注意这个问题。
 
@@ -185,9 +189,11 @@ panic: assignment to entry in nil map
 goroutine 1 [running]:
 main.main()
 go/src/asong.cloud/Golang_Dream/code_demo/slice_demo/nil.go:10 +0xed
-根据运行结果我们可以看出，一个nil的map可以读数据，但是不可以写入数据，否则会发生panic，所以要使用map一定要使用make进行初始化。
+```
+##### 一个nil的map可以读数据，但是不可以写入数据，否则会发生panic，所以要使用map一定要使用make进行初始化。
 
-关闭nil的channel会引发panic
+##### 关闭nil的channel会引发panic
+```
 func main()  {
 var cha chan int
 close(cha)
@@ -199,16 +205,16 @@ panic: close of nil channel
 goroutine 1 [running]:
 main.main()
 /go/src/asong.cloud/Golang_Dream/code_demo/slice_demo/nil.go:5 +0x2a
+
 ```
-* 根据运行结果我们可以得出关闭一个nil的channel会导致程序panic，在使用上我们要注意这个问题，还有有一个需要注意的问题：一个nil的channel读写数据都会造成永远阻塞。
-```
-一个为nil的slice使用注意事项
+#### 一个nil的channel读写数据都会造成永远阻塞。
+
+
 func main()  {
 var slice []int64 = nil
 fmt.Println(len(slice))
 fmt.Println(cap(slice))
 for range slice{
-
 }
 fmt.Println(slice[0])
 }
@@ -223,7 +229,7 @@ main.main()
 
 根据这个例子，我们可以得出如下结论：
 
-一个为nil的索引，不可以进行索引，否则会引发panic，其他操作是可以。
+#### 一个为nil的切片，不可以进行索引，否则会引发panic，其他操作是可以。
 
 方法接收者为nil时是否会引发panic
 func main()  {
@@ -265,9 +271,9 @@ main.(*man).GetName(...)
 go/src/asong.cloud/Golang_Dream/code_demo/slice_demo/nil.go:18
 main.main()
 go/src/asong.cloud/Golang_Dream/code_demo/slice_demo/nil.go:9 +0x23
-这样就是直接引发panic，所以为了程序健壮性我们要做一次指针判空处理。
-```
-* 空指针是一个没有任何值的指针
+#### 这样就是直接引发panic，所以为了程序健壮性我们要做一次指针判空处理。
+
+#### 空指针是一个没有任何值的指针
 ```
 func main()  {
 var a = (*int64)(unsafe.Pointer(uintptr(0x0)))
@@ -275,7 +281,9 @@ fmt.Println(a == nil)  //true
 }
 // 运行结果
 true
-这里我们用了0x0做了一个小实验，正好证明了空指针就是一个没有指向任何值的指针。
+
 ```
-#### 总结
-* 文章接近尾声啦，我们来揭晓一下文章开始的答案，用文中nil比较的知识点正好可以解答这个问题，nil标识符是没有类型的，所以==对于nil来说是一种未定义的操作，不可以进行比较，而这个在python中是可以比较的，在 python 中，两个None 值永远相等，不要弄混了朋友们。
+#### 这里我们用了0x0做了一个小实验，正好证明了空指针就是一个没有指向任何值的指针。
+### 总结
+* 文章接近尾声啦，我们来揭晓一下文章开始的答案，用文中nil比较的知识点正好可以解答这个问题
+#### nil标识符是没有类型的，所以==对于nil来说是一种未定义的操作，不可以进行比较，而这个在python中是可以比较的，在 python 中，两个None 值永远相等，不要弄混了朋友们。

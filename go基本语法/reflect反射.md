@@ -1,31 +1,42 @@
 ### 反射是什么
 #### 在计算机学中，反射是指计算机程序在运行时（runtime）可以访问、检测和修改它本身状态或行为的一种能力。
 #### 用比喻来说，反射就是程序在运行的时候能够 “观察” 并且修改自己的行为（来自维基百科）。
+#### 使用
 
+
+```
+v := reflect.ValueOf(&i)
+v.Elem().SetFloat(6.66)
+log.Println("value: ", i)
+
+```
 
 * 简单来讲就是，应用程序能够在运行时观察到变量的值，并且能够修改他。
 ```
 一个例子
 最常见的 reflect 标准库例子，如下：
 
+package main
+
 import (
-"fmt"
-"reflect"
+	"fmt"
+	"reflect"
 )
 
 func main() {
-rv := []interface{}{"hi", 42, func() {}}
-for _, v := range rv {
-switch v := reflect.ValueOf(v); v.Kind() {
-case reflect.String:
-fmt.Println(v.String())
-case reflect.Int, reflect.Int8, reflect.Int16, reflect.Int32, reflect.Int64:
-fmt.Println(v.Int())
-default:
-fmt.Printf("unhandled kind %s", v.Kind())
+	rv := []interface{}{"hi", 42, func() {}}
+	for _, v := range rv {
+		switch v := reflect.ValueOf(v); v.Kind() {
+		case reflect.String:
+			fmt.Println(v.String())
+		case reflect.Int, reflect.Int8, reflect.Int16, reflect.Int32, reflect.Int64:
+			fmt.Println(v.Int())
+		default:
+			fmt.Printf("unhandled kind %s", v.Kind())
+		}
+	}
 }
-}
-}
+
 输出结果：
 
 hi
@@ -72,16 +83,15 @@ func TypeOf(i interface{}) Type {
 eface := *(*emptyInterface)(unsafe.Pointer(&i))
 return toType(eface.typ)
 }
+```
 从源码层面来看，TypeOf 方法中主要涉及三块操作，分别如下：
 
-使用 unsafe.Pointer 方法获取任意类型且可寻址的指针值。
-
-利用 emptyInterface 类型进行强制的 interface 类型转换。
-
-调用 toType 方法转换为可供外部使用的 Type 类型。
+* 使用 unsafe.Pointer 方法获取任意类型且可寻址的指针值。 
+* 利用 emptyInterface 类型进行强制的 interface 类型转换。 
+* 调用 toType 方法转换为可供外部使用的 Type 类型。
 
 而这之中信息量最大的是 emptyInterface 结构体中的 rtype 类型：
-
+```
 type rtype struct {
 size       uintptr
 ptrdata    uintptr
@@ -95,6 +105,7 @@ gcdata    *byte
 str       nameOff
 ptrToThis typeOff
 }
+```
 在使用上最重要的是 rtype 类型，其实现了 Type 类型的所有接口方法，因此他可以直接作为 Type 类型返回。
 
 而 Type 本质上是一个接口实现，其包含了获取一个类型所必要的所有方法：
@@ -119,10 +130,10 @@ NumMethod() int
 
 // 返回该类型的名称
 Name() string
-...
 }
+
 建议大致过一遍，了解清楚有哪些方法，再针对向看就好。
-```
+
 主体思想是给自己大脑建立一个索引，便于后续快速到 pkg.go.dev 上查询即可。
 ```
 reflect.ValueOf
@@ -135,10 +146,11 @@ fmt.Println("value:", reflect.ValueOf(x))
 输出结果：
 
 value: 3.4
+```
 从输出结果中，可得知通过 reflect.ValueOf 成功获取到了变量 x 的值为 3.4。与 reflect.TypeOf 形成一个相匹配，一个负责获取类型，一个负责获取值。
 
 那么 reflect.ValueOf 是怎么获取到值的呢，核心源码如下：
-
+```
 func ValueOf(i interface{}) Value {
 if i == nil {
 return Value{}
@@ -161,6 +173,7 @@ f |= flagIndir
 }
 return Value{t, e.word, f}
 }
+```
 从源码层面来看，ValueOf 方法中主要涉及如下几个操作：
 
 调用 escapes 让变量 i 逃逸到堆上。
@@ -221,14 +234,14 @@ typedmemmove(v.typ, v.ptr, x.ptr)
 *(*unsafe.Pointer)(v.ptr) = x.ptr
 }
 }
-```
-检查反射对象及其字段是否可以被设置。
 
-检查反射对象及其字段是否导出（对外公开）。
+* 检查反射对象及其字段是否可以被设置。
 
-调用 assignTo 方法创建一个新的反射对象并对原本的反射对象进行覆盖。
+* 检查反射对象及其字段是否导出（对外公开）。
 
-根据 assignTo 方法所返回的指针值，对当前反射对象的指针进行值的修改。
+* 调用 assignTo 方法创建一个新的反射对象并对原本的反射对象进行覆盖。
+
+* 根据 assignTo 方法所返回的指针值，对当前反射对象的指针进行值的修改。
 
 简单来讲就是，检查是否可以设置，接着创建一个新的对象，最后对其修改。是一个非常标准的赋值流程。
 

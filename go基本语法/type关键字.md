@@ -31,15 +31,15 @@ func main() {
 	fmt.Printf("n = %v, type = %T\n", n, n)//n = 100, type = main.interger
 	fmt.Printf("i = %v, type = %T\n", i, i)//i = 100, type = int
 }
-/* 类型别名
-   使用type关键字定义类型别名
+```
+#### 类型别名
+使用type关键字定义类型别名
 
 type IntAlias = int
 
-类型定义和类型别名表面上只有一个等号的差异，区别在于类型定义会形成一种新的类型，新类型本身依然具备原始类型的特性。而类型别名只是为类型取别名，别名与原始类型仍旧是同一种类型。
-
-
-*/
+##### 类型定义和类型别名表面上只有一个等号的差异，区别在于类型定义会形成一种新的类型，新类型本身依然具备原始类型的特性。而类型别名只是为类型取别名，别名与原始类型仍旧是同一种类型。
+#### 若为非本地类型（不是在当前包中定义的类型）定义别名，则不能为其定义方法。
+```
 package main
 
 import "fmt"
@@ -57,7 +57,7 @@ func main(){
 	fmt.Printf("x type is %T\n", x)//x type is main.NewInt
 	fmt.Printf("y type is %T\n", y)//y type is int
 }
-// 若为非本地类型（不是在当前包中定义的类型）定义别名，则不能为其定义方法。
+
 
 package main
 
