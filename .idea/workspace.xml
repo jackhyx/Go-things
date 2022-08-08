@@ -5,47 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fcfee9f-254d-43dd-a903-e1d4ecf7ac4d" name="变更" comment="go 学习笔记">
+      <change afterPath="$PROJECT_DIR$/go基本类型/channal 使用场景.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go基本类型/const &amp; iota.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go基本类型/select.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go基本类型/slice &amp; 数组.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/Map特性.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/Map特性.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/Slice特性.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/Slice特性.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/String特性.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/String特性.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/c++ generic.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/c++ generic.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/channel用法.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/channel用法.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/defer的使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/defer的使用.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/errorgroup用法.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/errorgroup用法.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/go 泛型.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/go 泛型.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/go-range易踩坑.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/go-range易踩坑.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/go-zero.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/go-zero.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/go基本特性.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/go基本特性.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/go面向对象.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/go面向对象.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/new &amp; make .md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/new &amp; make .md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/nil的比较.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/nil的比较.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/options模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/options模式.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/protobuf.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/protobuf.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/reflect反射.md" beforeDir="false" afterPath="$PROJECT_DIR$/go特性/reflect反射.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/type关键字.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/type关键字.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/值方法和指针方法.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/值方法和指针方法.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/切片slice的一些问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/切片slice的一些问题.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/单例模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/go特性/单例模式.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/变量.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/变量.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/变量标准声明&amp;短声明.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/变量标准声明&amp;短声明.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/基本类型.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/基本类型.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/多值赋值.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/多值赋值.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/枚举.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/枚举.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/空结构体使用场景.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/空结构体使用场景.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/类型断言.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/类型断言.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/系统存储方式：大端？小端？.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/系统存储方式：大端？小端？.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/结构体和结构体指针的区别.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/结构体和结构体指针的区别.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/逃逸分析.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/逃逸分析.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/错误处理.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/错误处理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go基本语法/零值特性.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/零值特性.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go高级特性/ m0、g0 的概念.md" beforeDir="false" afterPath="$PROJECT_DIR$/go特性/ m0、g0 的概念.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go高级特性/go 可变参数.md" beforeDir="false" afterPath="$PROJECT_DIR$/go特性/go 可变参数.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go高级特性/go常见编码错误.md" beforeDir="false" afterPath="$PROJECT_DIR$/go特性/go常见编码错误.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go高级特性/http中间件.md" beforeDir="false" afterPath="$PROJECT_DIR$/go特性/http中间件.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go高级特性/options模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/go特性/options模式.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go高级特性/timer用法.md" beforeDir="false" afterPath="$PROJECT_DIR$/go特性/timer用法.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go高级特性/unsafe.Pointer使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/go特性/unsafe.Pointer使用.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go基本类型/channel用法.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/channel用法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go基本类型/new &amp; make .md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/new &amp; make .md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +26,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://C:/Program Files/Go" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -86,23 +52,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "D:/Users/sangfor/Desktop/jackhyx/Go-things/go高级特性",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/sangfor/Desktop/jackhyx/Go-things/go高级特性&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\go高级特性" />
