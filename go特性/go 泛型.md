@@ -1,11 +1,13 @@
+
+#### 泛型语法详解
+小结：
+类型参数  T
+约束：利用interface
+```
 package go_use
 
 import "fmt"
 
-/* 泛型语法详解
-小结：
-类型参数  T
-约束：利用interface
 
 
 type Addable interface {
@@ -38,7 +40,7 @@ func main() {
 
     fmt.Println(add("foo","bar"))
 }
-
+```
 ## 类比C++
 
 

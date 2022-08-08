@@ -91,8 +91,10 @@ buckets    unsafe.Pointer // 指向一个bucket数组
 }
 ```
 
-* 我们主要关注count和buckets这两个字段。count就是指map元素的个数；而buckets是真正存储map的key-value对的地方。这也就可以解释为什么我们一开始那个坑的报错问题。我们用var m map[int]int声明的map，只是分配了一个hmap结构体而已，而buckets这个字段并没有分配内存空间。
-* 所以，最后解答我们为什么是引用类型的问题。其实我们传给test函数的值，只是一个hmap结构体；而这个结构体里面又包含了一个bucket数组的指针，也就相当于，表面上我们传了个结构体值过去，而内部却是传了一个指针，这个指针所存储的地址，也就是指针指向的bucket数组结构并没有改变。我们如果对存储key-value对的bucket进行修改，如m[1] = 2这种操作，实际上修改的就是改变了外部函数的bucket值。
+* 我们主要关注count和buckets这两个字段。count就是指map元素的个数；而buckets是真正存储map的key-value对的地方。
+* 这也就可以解释为什么我们一开始那个坑的报错问题。我们用var m map[int]int声明的map，只是分配了一个hmap结构体而已，而buckets这个字段并没有分配内存空间。
+* 所以，最后解答我们为什么是引用类型的问题。其实我们传给test函数的值，只是一个hmap结构体；
+* 而这个结构体里面又包含了一个bucket数组的指针，也就相当于，表面上我们传了个结构体值过去，而内部却是传了一个指针，这个指针所存储的地址，也就是指针指向的bucket数组结构并没有改变。我们如果对存储key-value对的bucket进行修改，如m[1] = 2这种操作，实际上修改的就是改变了外部函数的bucket值。
 * 每一个bucket数组中存储的元素结构为bmap，这里真正存储着key与value的值：
 ```
   type bmap struct {
@@ -107,5 +109,6 @@ buckets    unsafe.Pointer // 指向一个bucket数组
 * Go 语言字典的键类型不可以是函数类型、字典类型和切片类型，但是value可以为任意类型 原因：哈希冲突需要比较
 * 哈希冲突的解决
 * 如果插入之后当前bucket无法容纳这个元素，Go就会新分配一个bucket，用当前bucket的overflow字段指向这个新的bucket，然后往新的bucket里插入当前key-value对即可
-* 如果overflow bucket数量过多，在get操作时，对这个overflow链表进行遍历的时间复杂度会大大升高，为了避免溢出bucket数量过多，Go语言会在超过某一个阈值的时候，触发扩容操作。Go语言bucket的扩容操作也是渐进式的
+* 如果overflow bucket数量过多，在get操作时，对这个overflow链表进行遍历的时间复杂度会大大升高，为了避免溢出bucket数量过多，Go语言会在超过某一个阈值的时候，触发扩容操作。
+* Go语言bucket的扩容操作也是渐进式的
 * Go语言结合了链地址法和开放定址法这两种方案
