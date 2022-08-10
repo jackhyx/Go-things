@@ -1,3 +1,76 @@
+
+
+#### 必须给map分配内存空间之后，才可以往map中添加元素：使用var语法声明一个map，不会分配内存
+#### make来创建一个map，Go在声明的同时，会自动为map分配内存空间，不会报错：
+#### map查询不存在的key不会报错的，返回了空值。
+#### 取值判断
+```
+
+func main() {
+  m := make(map[int]int)
+  if _, ok := m[1]; !ok {
+    fmt.Println("key不存在")
+  }
+}
+```
+#### map的删除很简单，内置了delete函数；不像切片移除元素那么复杂，切片移除元素只能通过分割+append的方式。
+#### 删除不存在的key，也不会报错。
+#### map没有直接排序的内置方法
+#### 字符串修改是不能直接修改的，需要转成rune切片后再修改
+
+* 下面介绍一种排序思路： 
+* 我们取出map的key，存储到切片中，对key进行排序，再根据排序后的key取出map中的值。
+ ```
+package main
+
+import (
+"fmt"
+"math/rand"
+"sort"
+"time"
+)
+
+func main() {
+// 初始化随机数种子
+rand.Seed(time.Now().UnixNano())
+
+// 声明+初始化map
+var    = make(map[string]int, 100)
+
+// 填充数据
+for i := 0; i < 100; i++ {
+key := fmt.Sprintf("stu%02d", i) //生成stu开头的字符串
+value := rand.Intn(100)          //生成0~99的随机整数
+scoreMap[key] = value            //这里的赋值用= 而不是:=
+}
+//总结： =是赋值 :=是声明并赋值
+
+// 取出map中所有的key 存到keys切片中
+var keys = make([]string, 0, 200)
+for key := range scoreMap {
+keys = append(keys, key)
+}
+
+// 对切片进行排序
+sort.Strings(keys)
+// 按照排序后的keys遍历map
+for _, key := range keys {
+fmt.Println(key, scoreMap[key])
+}
+}
+``
+* 定义变量时，var 和 :=不能同时存在，因为:=代表声明并初始化，同时使用会提示重复声明错误。
+* Go生成可变的随机数需要设置随机种子，我们一般将时间戳设置为随机种子：rand.Seed(time.Now().UnixNano())
+
+
+
+
+
+
+
+
+
+
 ### 字典-map
 ### map初始化与内存分配
 * 首先，必须给map分配内存空间之后，才可以往map中添加元素：
