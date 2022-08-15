@@ -1,41 +1,45 @@
 ### defer
-#### defer是Go语言中提供的关键字，可以注册多个延迟调用，，这些调用可以先进后出的顺序在函数返回前被执行。使用defer可以方便我们的开发，但同时要注意它的副作用，下面对几个要注意的点进行介绍讲解。
+#### defer是Go语言中提供的关键字，可以注册多个延迟调用这些调用可以先进后出的顺序在函数返回前被执行。使用defer可以方便我们的开发，但同时要注意它的副作用，下面对几个要注意的点进行介绍讲解。
 
 #### defer和函数返回值
 * defer中如果引用了函数的返回值，则会因引用形式不同导致不同的结果，这些结果会造成很大问题困扰，下面我们先看一下示例：
 ```
 package main
+
 import "fmt"
-func func1()  (r int){
-defer func(){
-r++
-}()
-return 0
+
+func func1() (r int) {
+	defer func() {
+		r++
+	}()
+	return 0
 }
-func func2()  (r int){
-t := 5
-defer func() {
-t = t+5
-}()
-return t
+func func2() (r int) {
+	t := 5
+	defer func() {
+		t = t + 5
+	}()
+	return t
 }
-func func3() (r int){
-defer func(r int) {
-r = r+5
-}(r)
-return 1
+func func3() (r int) {
+	defer func(r int) {
+		r = r + 5
+	}(r)
+	return 1
 }
-func main(){
-fmt.Println("func1=",func1())
-fmt.Println("func2=",func2())
-fmt.Println("func3=",func3())
+func main() {
+	fmt.Println("func1=", func1())
+	fmt.Println("func2=", func2())
+	fmt.Println("func3=", func3())
 }
+
 //运行结果
 1
 5
 1
 ```
-* 根据结果我们进行分析，func1、func2、func3这三个函数的共同点就是带命名返回值的函数，返回值都是变量r。我们知道函数调用方负责开辟栈空间，包括形参和返回值的空间。有名的函数返回值相当于函数的局部变量，被初始化为类型的零值。
+* 根据结果我们进行分析，func1、func2、func3这三个函数的共同点就是带命名返回值的函数，返回值都是变量r。
+* 我们知道函数调用方负责开辟栈空间，包括形参和返回值的空间。有名的函数返回值相当于函数的局部变量，被初始化为类型的零值。
 #### 所以我们可以分析func1函数如下：
 
 * r是函数的有名返回值，分配在栈上，其地址又被称为返回值所在栈区。首先r被初始化为0.

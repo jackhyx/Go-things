@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fcfee9f-254d-43dd-a903-e1d4ecf7ac4d" name="变更" comment="go 学习笔记">
-      <change afterPath="$PROJECT_DIR$/Gin/Router路由结构.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gogogo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go用法/go面向对象.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go用法/protobuf.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go用法/reflect反射.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go用法/timer用法.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go用法/单例模式.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go用法/类型断言.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socket编程/client/client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socket编程/server/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go基本类型/rune.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go基本类型/函数.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go用法/结构体和结构体指针的区别.md" beforeDir="false" afterPath="$PROJECT_DIR$/go用法/结构体和结构体指针的区别.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go基本类型/Map特性.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/map.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go基本类型/String特性.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/String特性.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go特性/reflect反射.md" beforeDir="false" afterPath="$PROJECT_DIR$/go特性/reflect反射.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +25,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://C:/Program Files/Go" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -57,29 +51,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.formatter.settings.were.checked" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/sangfor/Desktop/jackhyx/Go-things/go高级特性&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\go高级特性" />
       <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\Test-Driven learnig for go" />
       <recent name="C:\Users\lenovo\Desktop\Go-things\Test-Driven Development for learnig" />
       <recent name="C:\Users\lenovo\Desktop\Go-things" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\go特性" />
+      <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\go高级特性" />
       <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\socket编程" />
       <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things" />
       <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\server" />
-      <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\go源码" />
-      <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\distribution" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build gogogo.go">
+  <component name="RunManager" selected="Go Build.go build client.go">
     <configuration name="go build client.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
       <working_directory value="$PROJECT_DIR$" />
@@ -120,15 +124,6 @@
       <filePath value="$PROJECT_DIR$/server/server.go" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Go 构建.go build gogogo.go" />
-        <item itemvalue="Go 构建.go build client.go" />
-        <item itemvalue="Go 构建.go build server.go" />
-        <item itemvalue="Go 构建.go build server/" />
-        <item itemvalue="Go 构建.go build gooo.go" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,18 +139,19 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="go 学习笔记" />
     <option name="LAST_COMMIT_MESSAGE" value="go 学习笔记" />
   </component>
   <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
     <environment>
       <map>
         <entry key="GOPROXY" value="http://mirrors.sangfor.org/nexus/repository/go-proxy" />
       </map>
     </environment>
+    <settings-migrated>true</settings-migrated>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Go_things$sum_test_go__TestSum_colletion_of_any_size.out" NAME="sum_test.go 中的 TestSum/colletion_of_any_size 覆盖结果" MODIFIED="1652151138968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
