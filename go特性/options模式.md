@@ -2,7 +2,7 @@
 * go的函数式选项模式[Functional Options Pattern in Go]
 * 前言： go语言开发遇到的许多问题之一是尝试将一个函数的参数设置为可选. 这是一个非常常见的用例, 类似python等语言中的函数默认参数，有些对象应该使用一些基本的默认设置来开箱即用, 你偶尔可能需要提供一些更详细的配置.
 #### 实例一
-```
+```go
  */
 package main
 // 函数式选项模式（灵活使用默认值，又不影响对元素的修改）
@@ -60,7 +60,7 @@ o1:>> &{AA BB 100
 * 函数式选项（Functional Options）: Golang中实现简洁API的一种方式
 * 在使用NewXXX函数构建struct的时候，struct中的属性并不都是必须的，这些非必须属性，在构建struct的过程中可以通过函数式选项的方式，实现更加简洁的API
 * 假设需要实现一个协程池GPool，其中必备的属性有协程数量size，还有可选项：是否异步async，错误处理errorHandler，最大缓存任务数maxTaskNums，那么struct的设计应该如下
-```
+```go
 package pool
 
 // Option 定义函数式选项
@@ -142,7 +142,7 @@ maxTasks: maxTasks,
 },
 }
 }
-
+```
 // 当struct中的属性变得越来越多时候，这长长的函数签名，对于调用者而言，简直是噩梦般的存在
 ```
 * 第二种，使用建造者模式

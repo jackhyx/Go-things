@@ -13,8 +13,9 @@
 数据结构
 首先我们一起看看 Go 语言中 map 的基础数据结构，先有一个大致的印象
 
-
 hmap 基本结构
+```go
+
 hmap
 type hmap struct {
 count     int
@@ -33,6 +34,8 @@ overflow    *[]*bmap
 oldoverflow *[]*bmap
 nextOverflow *bmap
 }
+```
+
 count：map 的大小，也就是 len() 的值。代指 map 中的键值对个数
 
 flags：状态标识，主要是 goroutine 写入和扩容机制的相关状态控制。并发读写的判断条件之一就是该值

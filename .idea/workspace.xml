@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fcfee9f-254d-43dd-a903-e1d4ecf7ac4d" name="变更" comment="go 学习笔记">
-      <change afterPath="$PROJECT_DIR$/go基本类型/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go基本类型/json包.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go基本类型/字符串切片转换.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/常问题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go基本类型/context携带value是线程安全.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go基本类型/string vs. []byte.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go基本类型/unitptr vs. unsafe.Pointer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go基本类型/互斥锁.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go基本类型/内存逃逸.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go基本类型/读写锁.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go基本类型/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go基本类型/值方法和指针方法.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/值方法和指针方法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go基本类型/切片slice的一些问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/切片slice的一些问题.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go基本类型/空结构体使用场景.md" beforeDir="false" afterPath="$PROJECT_DIR$/go基本类型/空结构体使用场景.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go源码/map初始化和访问.md" beforeDir="false" afterPath="$PROJECT_DIR$/go源码/map初始化和访问.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go特性/options模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/go特性/options模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/常问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/常问题.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +94,7 @@
       <recent name="D:\Users\sangfor\Desktop\jackhyx\Go-things\server" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build client.go">
+  <component name="RunManager" selected="Go Build.go build client.go">
     <configuration name="go build client.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-things" />
       <working_directory value="$PROJECT_DIR$" />
@@ -156,7 +165,7 @@
     <settings-migrated>true</settings-migrated>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Go_things$sum_test_go.out" NAME="sum_test.go 覆盖结果" MODIFIED="1652151075935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Go_things$sum_test_go__TestSum_colletion_of_any_size.out" NAME="sum_test.go 中的 TestSum/colletion_of_any_size 覆盖结果" MODIFIED="1652151138968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Go_things$sum_test_go.out" NAME="sum_test.go 覆盖结果" MODIFIED="1652151075935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
